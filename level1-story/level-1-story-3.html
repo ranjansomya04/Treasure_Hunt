@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/story-intro.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <script src="../JS/baffle.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="intro__info pos--fix align--center center--xy o--0">
+            <div>
+                <h1 class="ff--oswald baffled"
+                    style="color: white; max-width: 650px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 32px; line-height: 35px; margin-top: auto; text-transform: uppercase;">
+                    Your laptop screen has a huge X on it and a blank. What could it possibly be?
+                </h1>
+            </div>
+        </div>
+        <a href="../wakeup.html"><button class="intro__btn pillBtn js-particlesBtn o--0"><span style="letter-spacing: 2px; font-size: 15px; font-family: Oswald;">LET'S FIND OUT</span></button></a>
+    </div>
+
+    <script type="text/javascript">
+        const text = baffle(".baffled");
+        text.set({
+            characters: '▒/< ▒<█>░ ▓█>██ ▒█▓ █▒▓▒░ █/█< ▓▒▓ █>░█ ░▒<▒',
+            speed: 120,
+        });
+        text.start();
+        text.reveal(2000);
+    </script>
+
+</body>
+
+</html>
+​

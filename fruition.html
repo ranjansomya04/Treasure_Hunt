@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/4.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <script src="JS/baffle.js"></script>
+</head>
+
+<body onload="analytics()">
+    <video preload="true" autoplay loop muted class="lazyload" data-sizes="auto" alt="Homepage" id="herovideo"
+        style="width:100%; height: 100vh;">
+        <source src="https://res.cloudinary.com/dwkhm30wx/video/upload/v1623493775/X_yz8qb5.mp4" type="video/mp4">
+    </video>
+
+    <!--Hint Overlay-->
+    <div>
+        <div id="hint1desc" class="hintdesc" onclick="off()">
+            <div id="text1">Loading...</div>
+        </div>
+        <div id="hint2desc" class="hintdesc" onclick="off()">
+            <div id="text2">Loading...
+            </div>
+        </div>
+        <div id="hint3desc" class="hintdesc" onclick="off()">
+            <div id="text3">Loading...</div>
+        </div>
+    </div>
+
+    <div class="intro__info pos--fix align--center center--xy o--0">
+        <div id="hints" class="hints"
+            style="position: absolute; top: 0%; right: 7%; background: rgba(255,255,255,0.9); display: none; border-radius: 20px;">
+            <ul id="hinter" style="color: black; padding-right: 30px; font-family: Karla;">
+                <li style="list-style-type: none; text-align: center; font-weight: bold; text-transform: uppercase;">
+                    Each Level has a
+                    maximum of 100 points
+                </li>
+                <hr>
+                <li class="hintlist" id="hint1"></li>
+            </ul>
+        </div>
+        <div>
+            <audio id="audio" autoplay>
+                <source src="Assets/audio/audio1.wav" type="audio/wav">
+            </audio>
+            <a href="Assets/audio/audio1.wav" download="AgentX"><button id="playButton" onclick="PlayPause()"
+                    class="pillBtn1" style="position: absolute; top: 0; letter-spacing: -2px;"><span>&#9658</span>
+                </button>
+            </a>
+            <form name="myForm" onsubmit="return validateForm()" method="post"
+                style="color: white; margin-top: 35%; font-size: 20px; font-family: Anonymous Pro">
+                <input type="name" name="key" required
+                    style="height: 25px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: none; font-family: Oswald; text-align: center; background: rgba(0,0,0,0.9); text-transform: uppercase; color: white; border: 1px solid white; padding: 3px 20px; font-size: 15px">
+                <input id="test" class="intro__btn pillBtn js-particlesBtn o--0" type="submit" value="CONTINUE"
+                    style="font-size: 22px;" onclick="storePageScore()">
+            </form>
+        </div>
+    </div>
+    <button id="hintOpener" class="pillBtn3" onclick="showHintPage()"><span style="font-size: 15px;">?</span></button>
+    <!-- <button id="hintOpened" class="pillBtn4" onclick="testing()" style=""><span style="font-size: 15px;"></span></button> -->
+    <!-- <input type="text" id="hiddenAns"> -->
+
+    <div>
+        <!-- <a href="4.html"><button class="intro__btn pillBtn js-particlesBtn o--0"><span style="font-size: 22px; font-family: Oswald; letter-spacing: 3px;">CONTINUE</span></button></a> -->
+    </div>
+    <!-- <iframe src="Assets/audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <!-- <audio id="player" preload="true" autoplay>
+        <source src="Assets/audio/level1.mp3" type="audio/mp3">
+    </audio> -->
+
+    <script type="text/javascript">
+        const text = baffle(".baffled");
+        text.set({
+            characters: '▒/< ▒<█>░ ▓█>██ ▒█▓ █▒▓▒░ █/█< ▓▒▓ █>░█ ░▒<▒',
+            speed: 120,
+        });
+        text.start();
+        text.reveal(4000);
+    </script>
+
+
+    <script>
+        var audio = document.getElementById("audio")
+        var playButton = document.getElementById("playButton");
+        var count = 0;
+
+        function PlayPause() {
+            audio.play();
+        }
+
+    </script>
+
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        $(document).keydown(function (e) {
+            if (e.which === 123) {
+                return false;
+            }
+        });
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+        }
+        $(document).keydown(function (e) {
+            if (e.which === 123) {
+                return false;
+            }
+        });
+    </script>
+
+    <script>
+        var hintBox = document.getElementById("hints");
+        function showHintPage() {
+            if (hintBox.style.display == "none") {
+                hintBox.style.display = "block";
+            }
+            else {
+                hintBox.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        //scoring system using local storage
+        //LV1 -10; LV2 -30; LV3 -50
+        // var maxPointsPerPage = 800;
+
+        if (typeof (Storage) !== "undefined") {
+            
+            var scoreKeeper = localStorage.getItem("score");
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        var hintChanger = document.getElementById("hint1");
+        hint1.innerHTML = "HINT 1: -10 Points";
+        hintChanger.onclick = function showHint1() {
+            document.getElementById("hint1desc").style.display = "block";
+            // firebase.database().ref('Questions/' + "Question1" + '/' + 'Hints/').on('value', function (snapshot) {
+            //     document.getElementById('text1').innerHTML = snapshot.val().Hint1;
+            // });
+            sessionStorage.setItem("hint1","Sound is the key");
+            document.getElementById('text1').innerHTML = sessionStorage.getItem('hint1');
+            scoreKeeper -= 10;
+            hint1.innerHTML = "HINT 2: -30 Points";
+            if (typeof (Storage) !== "undefined") {
+                localStorage.setItem("score", scoreKeeper);
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }
+            hintChanger.onclick = function showHint2() {
+                document.getElementById("hint2desc").style.display = "block";
+                // firebase.database().ref('Questions/' + "Question1" + '/' + 'Hints/').on('value', function (snapshot) {
+                //     document.getElementById('text2').innerHTML = snapshot.val().Hint2;
+                // });
+                sessionStorage.setItem("hint2","Dots and Dashes");
+                document.getElementById('text2').innerHTML = sessionStorage.getItem('hint2');
+                scoreKeeper -= 30;
+                hint1.innerHTML = "HINT 3: -50 Points";
+                if (typeof (Storage) !== "undefined") {
+                    localStorage.setItem("score", scoreKeeper);
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                }
+                hintChanger.onclick = function showHint3() {
+                    document.getElementById("hint3desc").style.display = "block";
+                    // firebase.database().ref('Questions/' + "Question1" + '/' + 'Hints/').on('value', function (snapshot) {
+                    //     document.getElementById('text3').innerHTML = snapshot.val().Hint3;
+                    // });
+                    sessionStorage.setItem("hint3","Decipher the morse code");
+                    document.getElementById('text3').innerHTML = sessionStorage.getItem('hint3');
+                    scoreKeeper -= 50;
+                    hint1.innerHTML = "NO MORE HINTS REMAINING";
+                    if (typeof (Storage) !== "undefined") {
+                        localStorage.setItem("score", scoreKeeper);
+                    } else {
+                        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                    }
+                    hintChanger.onclick = function removeHint() {
+                        document.getElementById("hints").remove();
+                        document.getElementById("hintOpener").remove();
+                        if (typeof (Storage) !== "undefined") {
+                            localStorage.setItem("score", scoreKeeper);
+                        } else {
+                            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        // overlay
+        function off() {
+            document.getElementById("hint1desc").style.display = "none";
+            document.getElementById("hint2desc").style.display = "none";
+            document.getElementById("hint3desc").style.display = "none";
+        }
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="JS/firebaseConnect.js"></script>
+    <script src="JS/Frameworks/1.js"></script>
+
+    <!-- <script>
+            //scoring system using local storage
+            //-10
+            var maxPointsPerPage = 100;
+            // var hinter = document.getElementById("hints");
+            var cutPts1 = document.getElementById("hint2");
+            var cutPts2 = document.getElementById("hint3");
+            var count = 10;
+            var appender = document.getElementById("hinter");
+            var newHint;
+            function showHint1(){
+                document.getElementById("hint1desc").style.display = "block";
+                newHint = document.createElement("li");
+                var newhr = document.createElement("hr");
+                newHint.textContent = "HINT 2: -30 Points";
+                newHint.className="hintlist";
+                appender.appendChild(newhr);
+                appender.appendChild(newHint);
+                // appender.removeChild(appender.childNodes[0]);
+                maxPointsPerPage -= 10;
+                newHint.onclick = function showHint2() {
+                    document.getElementById("hint2desc").style.display = "block";
+                    newHint = document.createElement("li");
+                    var newhr = document.createElement("hr");
+                    newHint.textContent = "HINT 3: -50 Points";
+                    appender.appendChild(newhr);
+                    appender.appendChild(newHint);
+                    // appender.removeChild(appender.childNodes[0]);
+                    maxPointsPerPage -= 30;
+                }
+            }
+            
+        </script> -->
+
+</body>
+
+</html>
+​

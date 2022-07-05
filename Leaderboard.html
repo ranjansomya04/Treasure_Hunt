@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <link rel="stylesheet" href="CSS/leaderboard.css">
+    <title>Lead</title>
+</head>
+<body>
+    <a class="intro__logoHolder" href="./">
+        <img class="intro__logo" src="Assets/logo/treasure.png" alt="The Hunt For Satoshi SVG Logo">
+    </a>
+    <section>
+        <!--for demo wrap-->
+        <h1>LEADERBOARD.</h1>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team Name</th>
+                <th>College</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>21RE001 </td>
+                <td>RVCE</td>
+                <td>1000</td>
+              </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+      <script>
+          // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+      </script>
+    
+</body>
+</html>

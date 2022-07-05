@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/3.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <script src="JS/baffle.js"></script>
+</head>
+
+<body>
+    <video preload="true" autoplay class="lazyload" data-sizes="auto" alt="Homepage" id="herovideo"
+        style="width:100%; height: 100vh;">
+        <source src="https://res.cloudinary.com/dwkhm30wx/video/upload/v1623485139/level1_ddfcnb.mp4" type="video/mp4">
+    </video>
+    <div>
+        <a href="fruition.html"><button class="intro__btn pillBtn js-particlesBtn o--0"><span style="font-size: 11px;">Let the Hunt Begin</span></button></a>
+    </div>
+    <!-- <iframe src="Assets/audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+    <!-- <audio id="player" preload="true" autoplay>
+        <source src="Assets/audio/level1.mp3" type="audio/mp3">
+    </audio> -->
+
+    <script type="text/javascript">
+        const text = baffle(".baffled");
+        text.set({
+            characters: '▒/< ▒<█>░ ▓█>██ ▒█▓ █▒▓▒░ █/█< ▓▒▓ █>░█ ░▒<▒',
+            speed: 120,
+        });
+        text.start();
+        text.reveal(4000);
+    </script>
+
+
+
+</body>
+
+</html>
+​

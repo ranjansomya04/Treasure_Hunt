@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="09D8C921-B250-4794-833D-33627C61350A" Version="1.1">
+   <Notes>
+      <Note Width="187.5" FontSize="12" ID="0" Position="918.5,16.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Begin the Hunt Page</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+         <PointsToNoteIDs>1</PointsToNoteIDs>
+      </Note>
+      <Note Width="141.943" FontSize="12" ID="1" Position="939.6,99.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>CIA Login Page</String>
+         <ConnectedNoteIDs>0, 2-3</ConnectedNoteIDs>
+         <PointsToNoteIDs>2-3</PointsToNoteIDs>
+      </Note>
+      <Note Width="217.065" FontSize="12" ID="2" Position="900.7,206.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Story Text Intro</String>
+         <ConnectedNoteIDs>1, 4</ConnectedNoteIDs>
+         <PointsToNoteIDs>4</PointsToNoteIDs>
+      </Note>
+      <Note Width="232.69" FontSize="12" ID="3" Position="1214.7,94.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Only People with Secret Keys can login</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="4" Position="953.3,308.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 1</String>
+         <ConnectedNoteIDs>2, 5-6</ConnectedNoteIDs>
+         <PointsToNoteIDs>5-6</PointsToNoteIDs>
+      </Note>
+      <Note Width="253.906" FontSize="12" ID="5" Position="673.2,371.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Intro Video with blinking eyes (not on loop)</String>
+         <ConnectedNoteIDs>4, 8</ConnectedNoteIDs>
+         <PointsToNoteIDs>8</PointsToNoteIDs>
+      </Note>
+      <Note Width="214.844" FontSize="12" ID="6" Position="1110.7,375.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Play Morse Code on Loop</String>
+         <ConnectedNoteIDs>4, 7-8</ConnectedNoteIDs>
+         <PointsToNoteIDs>7-8</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="7" Position="1420.9,368.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Morse Code spells “PARIS”</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="146.228" FontSize="12" ID="8" Position="941.2,491.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Fill>0.0 0.0 0.0</Fill>
+            <Border Weight="1">0.769436 0.762219 0.390143</Border>
+         </Appearance>
+         <String>Connector Node</String>
+         <ConnectedNoteIDs>5-6, 9-10</ConnectedNoteIDs>
+         <PointsToNoteIDs>9-10</PointsToNoteIDs>
+      </Note>
+      <Note Width="217.711" FontSize="12" ID="9" Position="701.2,608.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Enable Textbox for answer</String>
+         <ConnectedNoteIDs>8, 12</ConnectedNoteIDs>
+         <PointsToNoteIDs>12</PointsToNoteIDs>
+      </Note>
+      <Note Width="115.784" FontSize="12" ID="10" Position="1146.6,621.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Enable Hints</String>
+         <ConnectedNoteIDs>8, 11-12</ConnectedNoteIDs>
+         <PointsToNoteIDs>11-12</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="11" Position="1421.7,606.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>2 Hints for each level</String>
+         <ConnectedNoteIDs>10</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="12" Position="944.4,743.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>9-10, 13-14</ConnectedNoteIDs>
+         <PointsToNoteIDs>13-14</PointsToNoteIDs>
+      </Note>
+      <Note Width="66.0034" FontSize="12" ID="13" Position="1277.3,742.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>PARIS</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="14" Position="959.1,847.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 2</String>
+         <ConnectedNoteIDs>12, 15</ConnectedNoteIDs>
+         <PointsToNoteIDs>15</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="15" Position="944.3,939.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show 6 Blanks and degN after that</String>
+         <ConnectedNoteIDs>14, 16-17</ConnectedNoteIDs>
+         <PointsToNoteIDs>16-17</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="16" Position="1228.6,940.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>There is a decimal after 2 Blanks</String>
+         <ConnectedNoteIDs>15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="17" Position="943.7,1073.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>15, 18, 20</ConnectedNoteIDs>
+         <PointsToNoteIDs>18, 20</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="18" Position="1195.8,1062.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Longitude of Paris</String>
+         <ConnectedNoteIDs>17, 19</ConnectedNoteIDs>
+         <PointsToNoteIDs>19</PointsToNoteIDs>
+      </Note>
+      <Note Width="126.697" FontSize="12" ID="19" Position="1454.4,1074.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>48.8566 degN</String>
+         <ConnectedNoteIDs>18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="20" Position="955.4,1169.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 3</String>
+         <ConnectedNoteIDs>17, 21</ConnectedNoteIDs>
+         <PointsToNoteIDs>21</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="21" Position="941.5,1257.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show story text for Level 3</String>
+         <ConnectedNoteIDs>20, 22-25</ConnectedNoteIDs>
+         <PointsToNoteIDs>22-25</PointsToNoteIDs>
+      </Note>
+      <Note Width="268.57" FontSize="12" ID="22" Position="1190.7,1255.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“These clues take him to the exact coordinates in Paris”</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="218.71" FontSize="12" ID="23" Position="1535.5,1254.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“Where he finds a book, his friend’s favorite book”</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="104.26" FontSize="12" ID="24" Position="813.9,1378.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Book</String>
+         <ConnectedNoteIDs>21, 26-27</ConnectedNoteIDs>
+         <PointsToNoteIDs>26-27</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="25" Position="1110.8,1378.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Blank for answer</String>
+         <ConnectedNoteIDs>21, 30</ConnectedNoteIDs>
+         <PointsToNoteIDs>30</PointsToNoteIDs>
+      </Note>
+      <Note Width="129.749" FontSize="12" ID="26" Position="556.8,1415.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Da Vinci Code</String>
+         <ConnectedNoteIDs>24, 28</ConnectedNoteIDs>
+         <PointsToNoteIDs>28</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.337" FontSize="12" ID="27" Position="509.4,1300.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Book is clickable &amp; downloadable</String>
+         <ConnectedNoteIDs>24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="28" Position="547.6,1493.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>85th page 6th line 6th word</String>
+         <ConnectedNoteIDs>26, 29</ConnectedNoteIDs>
+         <PointsToNoteIDs>29</PointsToNoteIDs>
+      </Note>
+      <Note Width="113.062" FontSize="12" ID="29" Position="561.1,1599.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“PAINTING”</String>
+         <ConnectedNoteIDs>28, 30</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="30" Position="954.3,1596.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>25, 29, 31</ConnectedNoteIDs>
+         <PointsToNoteIDs>29, 31</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="31" Position="966.3,1732.3">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 4</String>
+         <ConnectedNoteIDs>30, 32</ConnectedNoteIDs>
+         <PointsToNoteIDs>32</PointsToNoteIDs>
+      </Note>
+      <Note Width="201.677" FontSize="12" ID="32" Position="925.7,1831.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Story Text for Level 4</String>
+         <ConnectedNoteIDs>31, 33-35, 37</ConnectedNoteIDs>
+         <PointsToNoteIDs>33-35, 37</PointsToNoteIDs>
+      </Note>
+      <Note Width="380.047" FontSize="12" ID="33" Position="1214.4,1823.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“This word could only refer to one thing that made sense, his friend’s art portfolio website”</String>
+         <ConnectedNoteIDs>32</ConnectedNoteIDs>
+      </Note>
+      <Note Width="293.32" FontSize="12" ID="34" Position="1644.3,1836.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“Upon checking the website, there was only one painting visible”</String>
+         <ConnectedNoteIDs>32</ConnectedNoteIDs>
+      </Note>
+      <Note Width="232.488" FontSize="12" ID="35" Position="1059.1,1958.3">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Image shows a painting</String>
+         <ConnectedNoteIDs>32, 36</ConnectedNoteIDs>
+         <PointsToNoteIDs>36</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="36" Position="1513.9,1946.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Painting Undecided</String>
+         <ConnectedNoteIDs>35, 40</ConnectedNoteIDs>
+         <PointsToNoteIDs>40</PointsToNoteIDs>
+      </Note>
+      <Note Width="218.794" FontSize="12" ID="37" Position="719.0,1956.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows Blank for Answer</String>
+         <ConnectedNoteIDs>32, 38</ConnectedNoteIDs>
+         <PointsToNoteIDs>38</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="38" Position="758.1,2054.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>37, 39, 42</ConnectedNoteIDs>
+         <PointsToNoteIDs>39, 42</PointsToNoteIDs>
+      </Note>
+      <Note Width="76.8188" FontSize="12" ID="39" Position="1089.0,2160.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>CARDS</String>
+         <ConnectedNoteIDs>38, 41</ConnectedNoteIDs>
+      </Note>
+      <Note Width="308.857" FontSize="12" ID="40" Position="1420.7,2083.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Player has to download picture and open it in Notepad. Riddle found in last line</String>
+         <ConnectedNoteIDs>36, 41</ConnectedNoteIDs>
+         <PointsToNoteIDs>41</PointsToNoteIDs>
+      </Note>
+      <Note Width="153.955" FontSize="12" ID="41" Position="1497.9,2218.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Riddle undecided</String>
+         <ConnectedNoteIDs>39-40</ConnectedNoteIDs>
+         <PointsToNoteIDs>39</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="42" Position="766.8,2273.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 5</String>
+         <ConnectedNoteIDs>38, 43</ConnectedNoteIDs>
+         <PointsToNoteIDs>43</PointsToNoteIDs>
+      </Note>
+      <Note Width="137.183" FontSize="12" ID="43" Position="757.2,2367.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show story text</String>
+         <ConnectedNoteIDs>42, 44-48</ConnectedNoteIDs>
+         <PointsToNoteIDs>44-48</PointsToNoteIDs>
+      </Note>
+      <Note Width="262.333" FontSize="12" ID="44" Position="964.3,2362.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“Cards only meant one thing. His friend’s favorite Casino”</String>
+         <ConnectedNoteIDs>43</ConnectedNoteIDs>
+      </Note>
+      <Note Width="442.46" FontSize="12" ID="45" Position="1356.5,2355.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“Upon going there and asking about his friend, the owner tells him that the only way to get an answer from them is to win at a high stakes poker game”</String>
+         <ConnectedNoteIDs>43</ConnectedNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="46" Position="404.8,2479.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows 5 Blanks for answer</String>
+         <ConnectedNoteIDs>43, 52</ConnectedNoteIDs>
+         <PointsToNoteIDs>52</PointsToNoteIDs>
+      </Note>
+      <Note Width="154.012" FontSize="12" ID="47" Position="744.1,2573.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows 3 blank images and 2 card images</String>
+         <ConnectedNoteIDs>43, 50</ConnectedNoteIDs>
+         <PointsToNoteIDs>50</PointsToNoteIDs>
+      </Note>
+      <Note Width="131.909" FontSize="12" ID="48" Position="1024.0,2491.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows a riddle</String>
+         <ConnectedNoteIDs>43, 49</ConnectedNoteIDs>
+         <PointsToNoteIDs>49</PointsToNoteIDs>
+      </Note>
+      <Note Width="137.183" FontSize="12" ID="49" Position="1237.3,2483.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Refers to Straight Flush</String>
+         <ConnectedNoteIDs>48, 50</ConnectedNoteIDs>
+         <PointsToNoteIDs>50</PointsToNoteIDs>
+      </Note>
+      <Note Width="204.329" FontSize="12" ID="50" Position="715.9,2717.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Guess the sequence of cards to form a straight flush</String>
+         <ConnectedNoteIDs>47, 49, 52</ConnectedNoteIDs>
+         <PointsToNoteIDs>52</PointsToNoteIDs>
+      </Note>
+      <Note Width="205.627" FontSize="12" ID="51" Position="1072.8,2933.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String> 3,4,5,6,7 in different blanks</String>
+         <ConnectedNoteIDs>52</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="52" Position="735.3,2953.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>46, 50-51, 53</ConnectedNoteIDs>
+         <PointsToNoteIDs>51, 53</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="53" Position="750.0,3055.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 6</String>
+         <ConnectedNoteIDs>52, 54</ConnectedNoteIDs>
+         <PointsToNoteIDs>54</PointsToNoteIDs>
+      </Note>
+      <Note Width="137.183" FontSize="12" ID="54" Position="736.9,3139.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show story text</String>
+         <ConnectedNoteIDs>53, 55, 58-59</ConnectedNoteIDs>
+         <PointsToNoteIDs>55, 58-59</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="55" Position="932.6,3120.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“The Owner, upon being defeated, gives him a box.”</String>
+         <ConnectedNoteIDs>54, 56</ConnectedNoteIDs>
+         <PointsToNoteIDs>56</PointsToNoteIDs>
+      </Note>
+      <Note Width="303.873" FontSize="12" ID="56" Position="1196.6,3116.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“He says his friend foresaw him coming here and gave him the box to give it to the main character if he won.”</String>
+         <ConnectedNoteIDs>55, 57</ConnectedNoteIDs>
+         <PointsToNoteIDs>57</PointsToNoteIDs>
+      </Note>
+      <Note Width="289.126" FontSize="12" ID="57" Position="1584.4,3128.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“The box is protected by a code and can only be opened by decoding it. ”</String>
+         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+      </Note>
+      <Note Width="108.447" FontSize="12" ID="58" Position="922.6,3271.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Blank</String>
+         <ConnectedNoteIDs>54, 61</ConnectedNoteIDs>
+         <PointsToNoteIDs>61</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="59" Position="530.7,3245.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Box with code on it</String>
+         <ConnectedNoteIDs>54, 60</ConnectedNoteIDs>
+         <PointsToNoteIDs>60</PointsToNoteIDs>
+      </Note>
+      <Note Width="78.9062" FontSize="12" ID="60" Position="368.2,3259.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“FLJYZ”</String>
+         <ConnectedNoteIDs>59, 62</ConnectedNoteIDs>
+         <PointsToNoteIDs>62</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="61" Position="710.6,3654.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>58, 64-66</ConnectedNoteIDs>
+         <PointsToNoteIDs>64-66</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="62" Position="317.5,3350.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Use the numbers of the cards from the last level as keys to decipher this code</String>
+         <ConnectedNoteIDs>60, 63</ConnectedNoteIDs>
+         <PointsToNoteIDs>63</PointsToNoteIDs>
+      </Note>
+      <Note Width="72.2168" FontSize="12" ID="63" Position="369.8,3504.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>F-3 = C
+L-4 = H
+J-5 = E
+Y-6 = S
+Z-7 = S</String>
+         <ConnectedNoteIDs>62, 64</ConnectedNoteIDs>
+         <PointsToNoteIDs>64</PointsToNoteIDs>
+      </Note>
+      <Note Width="88.3545" FontSize="12" ID="64" Position="357.2,3666.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“CHESS”</String>
+         <ConnectedNoteIDs>61, 63</ConnectedNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="65" Position="720.4,3736.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 7</String>
+         <ConnectedNoteIDs>61</ConnectedNoteIDs>
+      </Note>
+      <Note Width="154.98" FontSize="12" ID="66" Position="699.2,3815.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows Story Text</String>
+         <ConnectedNoteIDs>61, 67-69</ConnectedNoteIDs>
+         <PointsToNoteIDs>67-69</PointsToNoteIDs>
+      </Note>
+      <Note Width="281.808" FontSize="12" ID="67" Position="993.4,3796.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“The Box finally opened and it contained a chess pattern and a safe ”</String>
+         <ConnectedNoteIDs>66</ConnectedNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="68" Position="496.4,3939.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows chess pattern</String>
+         <ConnectedNoteIDs>66, 70, 72</ConnectedNoteIDs>
+         <PointsToNoteIDs>70, 72</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="69" Position="850.3,3941.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows safe with 4 blanks</String>
+         <ConnectedNoteIDs>66, 73</ConnectedNoteIDs>
+         <PointsToNoteIDs>73</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="70" Position="246.2,3938.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>One Move checkmate situation</String>
+         <ConnectedNoteIDs>68, 71</ConnectedNoteIDs>
+         <PointsToNoteIDs>71</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="71" Position="247.3,4185.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Answer Example - QXF6</String>
+         <ConnectedNoteIDs>70, 73</ConnectedNoteIDs>
+      </Note>
+      <Note Width="181.048" FontSize="12" ID="72" Position="493.0,4050.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Undecided Pattern</String>
+         <ConnectedNoteIDs>68</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="73" Position="705.8,4198.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>69, 71, 74</ConnectedNoteIDs>
+         <PointsToNoteIDs>71, 74</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="74" Position="717.9,4305.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 8</String>
+         <ConnectedNoteIDs>73, 75</ConnectedNoteIDs>
+         <PointsToNoteIDs>75</PointsToNoteIDs>
+      </Note>
+      <Note Width="154.98" FontSize="12" ID="75" Position="697.0,4396.0">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows Story Text</String>
+         <ConnectedNoteIDs>74, 76-82</ConnectedNoteIDs>
+         <PointsToNoteIDs>76-82</PointsToNoteIDs>
+      </Note>
+      <Note Width="248.987" FontSize="12" ID="76" Position="949.9,4388.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“Upon opening the safe, there was a pendrive inside.”</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+      </Note>
+      <Note Width="308.854" FontSize="12" ID="77" Position="1284.1,4386.6">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>“After inserting the drive in his laptop, a rather interesting web page opened”</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+      </Note>
+      <Note Width="240.783" FontSize="12" ID="78" Position="17.3,4560.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows a GTA San Andreas loading screen background</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+      </Note>
+      <Note Width="196.845" FontSize="12" ID="79" Position="301.5,4560.2">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows a “Your Account: 0$” element</String>
+         <ConnectedNoteIDs>75, 83</ConnectedNoteIDs>
+         <PointsToNoteIDs>83</PointsToNoteIDs>
+      </Note>
+      <Note Width="354.149" FontSize="12" ID="80" Position="587.5,4552.4">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows a disabled “PAY” Button that enables only when “Your Account: 100$” happens</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+      </Note>
+      <Note Width="210.364" FontSize="12" ID="81" Position="1047.3,4571.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Shows a blank for Answer</String>
+         <ConnectedNoteIDs>75, 85</ConnectedNoteIDs>
+         <PointsToNoteIDs>85</PointsToNoteIDs>
+      </Note>
+      <Note Width="251.796" FontSize="12" ID="82" Position="1350.9,4575.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Site says that he has to pay 100$ in order to proceed</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+      </Note>
+      <Note Width="487.532" FontSize="12" ID="83" Position="152.4,4680.9">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Only way to increase money in GTA San Andreas without playing was cheat Codes</String>
+         <ConnectedNoteIDs>79, 84</ConnectedNoteIDs>
+         <PointsToNoteIDs>84</PointsToNoteIDs>
+      </Note>
+      <Note Width="340.478" FontSize="12" ID="84" Position="216.1,4794.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Only cheat code for money is “HESOYAM”</String>
+         <ConnectedNoteIDs>83, 85</ConnectedNoteIDs>
+         <PointsToNoteIDs>85</PointsToNoteIDs>
+      </Note>
+      <Note Width="142.749" FontSize="12" ID="85" Position="720.3,4818.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Validate Answer</String>
+         <ConnectedNoteIDs>81, 84, 86</ConnectedNoteIDs>
+         <PointsToNoteIDs>86</PointsToNoteIDs>
+      </Note>
+      <Note Width="114.746" FontSize="12" ID="86" Position="728.9,4926.8">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Start Level 9</String>
+         <ConnectedNoteIDs>85, 87</ConnectedNoteIDs>
+         <PointsToNoteIDs>87</PointsToNoteIDs>
+      </Note>
+      <Note Width="145.532" FontSize="12" ID="87" Position="711.6,5011.5">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Show Story Text</String>
+         <ConnectedNoteIDs>86, 88-89</ConnectedNoteIDs>
+         <PointsToNoteIDs>88-89</PointsToNoteIDs>
+      </Note>
+      <Note Width="255.155" FontSize="12" ID="88" Position="993.1,4996.7">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Make something up because I dont know how to continue story after this</String>
+         <ConnectedNoteIDs>87</ConnectedNoteIDs>
+      </Note>
+      <Note Width="145.532" FontSize="12" ID="89" Position="706.6,5095.1">
+         <Appearance>
+            <Alignment>Center</Alignment>
+            <Border Weight="2" Style="Rounded"/>
+         </Appearance>
+         <String>Take to Coding Ninjas and show QUIZ</String>
+         <ConnectedNoteIDs>87</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="FD72C555-AA91-44C3-B754-F1E6800E2891" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="3163A172-D32F-45FE-8D8F-35DFE7E40DE8" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="8D054169-A405-4E80-8B48-0D27F97066FC" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="3CA76DC4-E004-472E-BFF1-42EE85F80306" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="D42A05CC-54FA-4AEC-9937-BFD87BD34B25" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="4C11BB6C-E888-440A-A3DF-CC607A0287ED" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="D0277890-C828-4A50-9CC6-0DEFEB5C362E" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>

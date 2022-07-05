@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/2.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <script src="JS/baffle.js"></script>
+    <script src="JS/Frameworks/0.js"></script>
+</head>
+
+<body>
+    <div>
+        <a class="intro__logoHolder" href="./">
+            <img class="intro__logo" src="Assets/logo/cia_logo.png" alt="The Hunt For Satoshi SVG Logo">
+        </a>
+        <h1 style="color: rgb(209, 208, 208); 
+        font-size: 30px; 
+        position: absolute; 
+        top: 36%; Left: 50%; 
+        transform: translate(-50%, -36%); 
+        font-family: 'Share Tech Mono', monospace; 
+        letter-spacing: 1px;">
+            CIA LOGIN</h1>
+        <div style="display: flex; 
+        position: absolute; 
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%,-50%); 
+        max-width: 800px;">
+            <form name="myForm" onsubmit="return validateForm()" method="post"
+                style="color: white; margin-top: 35%; font-size: 20px; font-family: Anonymous Pro">
+                SECRET KEY: <input id="KEY" type="password" name="key" required style="height: 25px;">
+                <!-- <input type="submit" value="LOGIN" style="background-color: rgb(0, 0, 0); 
+            border: 1px solid white; 
+            font-family: Anonymous Pro; 
+            font-weight: bold; 
+            border-radius: 3px; 
+            width: 20%; 
+            height: 30%; 
+            margin-top: 7%; 
+            align-items: center; 
+            color: white;"> -->
+            </form>
+            <button onclick="login()" class="pillBtn1">LOGIN</button>
+        </div>
+    </div>
+
+    <!-- <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["key"].value;
+            if (x == "21RE000" || x == "21RE002") {
+                window.location.href = "intro-story/story-intro1.html";
+                return false;
+            }
+            else {
+                alert("This Page is Not Meant For You!");
+                return false;
+            }
+        }
+    </script> -->
+    <!-- <script>
+        var x = document.getElementById("KEY").value;
+        localStorage.setItem("username", x);
+    </script> -->
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        $(document).keydown(function (e) {
+            if (e.which === 123) {
+                return false;
+            }
+        });
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+        }
+        $(document).keydown(function (e) {
+                if (e.which === 123) {
+                    return false;
+                }
+            });
+    </script>
+    
+    
+
+</body>
+
+</html>
+​
