@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+</head>
+<body>
+    <ol id="awesome" style="font-family: karla; font-size: 20px;">
+        <!-- <li></li> -->
+    </ol>
+    <script>
+        function makeid(length) {
+                var result = '';
+                var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                var charactersLength = characters.length;
+                for (var i = 0; i < length; i++) {
+                    result += characters.charAt(Math.floor(Math.random() *
+                        charactersLength));
+                }
+                return result;
+            }
+            var x;
+            const body = document.body;
+            var keyList = document.getElementById('awesome');
+            for (var i=1; i<=9;i++)
+            {
+                x = ("21RE" + makeid(5) + "00"+i);
+                var list = document.createElement("li");
+                list.innerHTML=x;
+                keyList.appendChild(list);
+            }
+    </script>
+</body>
+</html>
