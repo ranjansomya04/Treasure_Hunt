@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/1.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Oswald:wght@500&display=swap">
+    <script src="JS/baffle.js"></script>
+</head>
+
+<body>
+    <div>
+        <a class="intro__logoHolder" href="./">
+            <img class="intro__logo" src="Assets/logo/treasure.png" alt="The Hunt For Satoshi SVG Logo">
+        </a>
+        <div class="intro__info pos--fix align--center center--xy o--0">
+            <div>
+                <h1 class="ff--oswald baffled"
+                    style="color: white; max-width: 350px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 32px; line-height: 35px; margin-top: auto">
+                    ARE YOU READY FOR THE <br> MOST EPIC GOOSE CHASE <br> YOU HAVE EVER BEEN ON?</h1>
+            </div>
+        </div>
+        <a href="login.html"><button class="intro__btn pillBtn js-particlesBtn o--0"><span
+                    style="font-size: 15px;">Begin The Hunt</span></button></a>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        const text = baffle(".baffled");
+        text.set({
+            characters: '▒/< ▒<█>░ ▓█>██ ▒█▓ █▒▓▒░ █/█< ▓▒▓ █>░█ ░▒<▒',
+            speed: 120,
+        });
+        text.start();
+        text.reveal(4000);
+    </script>
+
+    <script>localStorage.setItem("score", 800);</script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="JS/firebaseConnect.js"></script>
+
+</body>
+
+</html>
+​
